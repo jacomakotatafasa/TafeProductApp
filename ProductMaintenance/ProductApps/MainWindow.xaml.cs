@@ -39,7 +39,7 @@ namespace ProductApps
                 
              totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 
-             decimal totalCharge = cProduct.TotalPayment + 25m + 5m;
+             decimal totalCharge = (cProduct.TotalPayment + 25m + 5m) * 1.1m;
                 
             totalChargeTextBox.Text = Convert.ToString(totalCharge);
               }
